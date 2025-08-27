@@ -1,2 +1,2 @@
 # gestao-tarefas-frontend
-Frontend do app gestão de tarefas
+Frontend do meu app gestão de tarefas
