@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tarefas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestor de Tarefas</h1>
+    <p class="muted">Versão básica - sem login. Informe o <b>ID do usuário</b> para filtrar as tarefas.</p>
+    
+    <div class="card">
+        <div class="row">
+            <input id="usuarioId" type="number" placeholder="ID do usuário" />
+            <button id="btnCarregar">Carregar tarefas</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Nova tarefa</h3>
+        <div class="row">
+            <input id="titulo" placeholder="Título" />
+            <select id="status">
+                <option value="PENDENTE">PENDENTE</option>
+                <option value="EM_ANDAMENTO">EM ANDAMENTO</option>
+                <option value="CONCLUIDA">CONCLUIDA</option>
+            </select>
+        </div>
+        <div class="row" style="margin-top:8px;">
+            <textarea id="descricao" placeholder="Descrição" rows="3" style="flex:1;"></textarea>
+        </div>
+        <button id="btnCriar" style="margin-top:8px;">Criar</button>
+    </div>
+
+    <div class="card">
+        <h3>Tarefas</h3>
+        <ul id="lista"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
